@@ -11,7 +11,7 @@ spec:
     git:
       url: https://github.com/sample-accelerators/spring-sensors-rabbit.git
       ref:
-        branch: main
+        branch: log4j
   serviceClaims:
     - name: rmq
       ref:
