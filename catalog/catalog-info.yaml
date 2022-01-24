@@ -1,4 +1,4 @@
-apiVersion: backstage.io/v1alpha1
+tanzu apps workload create spring-sensors -f config/workload.yamlapiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: spring-sensors-rabbit
