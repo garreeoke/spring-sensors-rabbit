@@ -5,4 +5,4 @@ spring:
 
 management.endpoints.web.exposure.include: "*"
 
-title: Tanzu Weather Sensor Database
+title: Tanzu Sensor Database
