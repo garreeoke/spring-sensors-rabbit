@@ -1,6 +1,6 @@
-SOURCE_IMAGE = os.getenv("SOURCE_IMAGE", default='your-registry.io/project/tanzu-java-web-app-source')
-LOCAL_PATH = os.getenv("LOCAL_PATH", default='.')
-NAMESPACE = os.getenv("NAMESPACE", default='default')
+SOURCE_IMAGE = os.getenv("SOURCE_IMAGE")
+LOCAL_PATH = os.getenv("LOCAL_PATH")
+NAMESPACE = os.getenv("NAMESPACE")
 
 k8s_custom_deploy(
     'spring-sensors',
@@ -20,4 +20,4 @@ k8s_custom_deploy(
 
 k8s_resource('spring-sensors', port_forwards=["8080:8080"],
             extra_pod_selectors=[{'serving.knative.dev/service': 'spring-sensors'}])
-allow_k8s_contexts('tap-dev-demo')
+allow_k8s_contexts('gke_crossplane-playground_us-west1-a_garreeoke1')
