@@ -5,4 +5,4 @@ spring:
 
 management.endpoints.web.exposure.include: "*"
 
-title: Tanzu Sensor Database with Upbound
+title: Sensor Database with Upbound
