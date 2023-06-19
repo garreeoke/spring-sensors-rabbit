@@ -5,4 +5,4 @@ spring:
 
 management.endpoints.web.exposure.include: "*"
 
-title: Sensor Database with Upbound & TAP
+title: Sensor Database with Upbound
