@@ -1,0 +1,16 @@
+apiVersion: tap.upbound.io/v1alpha1
+kind: SvcBinding
+metadata:
+  name: spring-sensors
+spec:
+  id: spring-sensors
+  #xrd: xawsbrokermqs.tap.upbound.io #will use after provisioner works.
+  region: us-west-2
+  engineVersion: "3.9.13"
+  tapK8ProviderCfg: torg-tap-ff7q6-f6jxt #Provider config on upbound cloud to talk back to TAP K8 cluster
+  writeConnectionSecretToRef:
+    name: spring-sensors-connection
+    #namespace: tap-workloads
+  compositionSelector:
+    matchLabels:
+      tanzu-type: regular
